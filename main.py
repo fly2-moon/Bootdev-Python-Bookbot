@@ -26,7 +26,7 @@ def main() -> None:
     contents:str = open_book(book_path)
     word_count:int = get_num_words(contents)
     count_dict:dict = count_characters(contents)
-    count_list = chars_dict_to_sorted_list(count_dict)
+    count_list:list = chars_dict_to_sorted_list(count_dict)
 
     print_report(book_path, word_count, count_list)
     
